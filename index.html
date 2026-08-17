@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onderzoek duurzame verpakkingsinkoop | Gerard Peeters</title>
+
+    <meta name="description" content="Doe mee aan DBA-onderzoek naar ESG, duurzaamheid en besluitvorming binnen de inkoop van kunststof verpakkingen in Nederland.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #262626;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(135deg, #f4f7f5 0%, #e8f0eb 100%);
+            padding: 90px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            color: #173d2c;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            line-height: 1.4;
+            font-weight: 400;
+            max-width: 850px;
+            margin: 0 auto 28px auto;
+            color: #444444;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 0 auto 35px auto;
+            font-size: 18px;
+        }
+
+        /* BUTTON */
+
+        .button {
+            display: inline-block;
+            background-color: #1d6946;
+            color: #ffffff;
+            padding: 16px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #144d34;
+            transform: translateY(-1px);
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 70px 0;
+        }
+
+        section.alt {
+            background-color: #f7f7f7;
+        }
+
+        h2 {
+            font-size: 34px;
+            line-height: 1.25;
+            color: #173d2c;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 1.3;
+            color: #173d2c;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 20px 0 25px 24px;
+        }
+
+        li {
+            margin-bottom: 9px;
+        }
+
+        /* COLUMNS */
+
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* CARD */
+
+        .card {
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* BENEFITS */
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .usp {
+            background-color: #ffffff;
+            padding: 25px;
+            border-left: 4px solid #1d6946;
+            border-radius: 4px;
+        }
+
+        .usp strong {
+            display: block;
+            color: #173d2c;
+            margin-bottom: 8px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background-color: #173d2c;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: #ffffff;
+        }
+
+        .cta p {
+            max-width: 750px;
+            margin: 0 auto 25px auto;
+            font-size: 18px;
+        }
+
+        .cta .button {
+            background-color: #ffffff;
+            color: #173d2c;
+            margin-top: 10px;
+        }
+
+        .cta .button:hover {
+            background-color: #eeeeee;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #111d17;
+            color: #dddddd;
+            padding: 35px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .columns,
+            .usp-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            h2 {
+                font-size: 29px;
+            }
+
+            .card {
+                padding: 28px;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+
+    <header class="hero">
+        <div class="container">
+
+            <h1>
+                Draag bij aan onderzoek naar duurzame verpakkingsinkoop
+            </h1>
+
+            <h2>
+                Hoe integreren Nederlandse organisaties ESG en duurzaamheid
+                in hun beslissingen rondom kunststof verpakkingen?
+            </h2>
+
+            <p>
+                Prijs, kwaliteit en leveringszekerheid zijn al jaren bepalende
+                factoren binnen inkoop. Maar welke rol spelen duurzaamheid,
+                circulariteit en Europese regelgeving wanneer de uiteindelijke
+                inkoopbeslissing wordt genomen?
+            </p>
+
+            <a
+                class="button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdh2CyTfQtD0cUWkXz21dsc4ARQqd5WdSoeGQ_ufKYv9Kn9Gw/viewform?usp=sharing&ouid=107501487899355200763"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Start de vragenlijst
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- INTRODUCTIE -->
+
+    <section>
+        <div class="container">
+
+            <div class="columns">
+
+                <div>
+
+                    <h2>
+                        De praktijk achter duurzame inkoop
+                    </h2>
+
+                    <p>
+                        De wereld van verpakkingsinkoop verandert snel.
+                        Europese regelgeving zoals de Packaging and Packaging
+                        Waste Regulation (PPWR) stelt nieuwe eisen aan
+                        verpakkingen, circulariteit en materiaalgebruik.
+                    </p>
+
+                    <p>
+                        Tegelijkertijd blijft de dagelijkse realiteit voor
+                        inkoopprofessionals bestaan: duurzaamheid moet worden
+                        afgewogen tegen kosten, kwaliteit, beschikbaarheid,
+                        compliance en leveringszekerheid.
+                    </p>
+
+                    <p>
+                        Deze afwegingen staan centraal in mijn
+                        <strong>Doctor of Business Administration (DBA)</strong>
+                        onderzoek naar ESG en de inkoop van kunststof
+                        verpakkingen binnen Nederlandse organisaties.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Uw praktijkervaring is waardevol
+                    </h3>
+
+                    <p>
+                        Voor het onderzoek zoek ik professionals die vanuit
+                        hun functie betrokken zijn bij:
+                    </p>
+
+                    <ul>
+                        <li>Procurement</li>
+                        <li>Category Management</li>
+                        <li>Packaging</li>
+                        <li>Supply Chain</li>
+                        <li>Sustainability / ESG</li>
+                        <li>Operations</li>
+                        <li>Directie of ondernemerschap</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DEELNAME -->
+
+    <section class="alt">
+
+        <div class="container">
+
+            <h2>
+                Doe mee aan het onderzoek
+            </h2>
+
+            <div class="columns">
+
+
+                <!-- VRAGENLIJST -->
+
+                <div class="card">
+
+                    <h3>
+                        Online vragenlijst
+                    </h3>
+
+                    <p>
+                        De vragenlijst duurt ongeveer
+                        <strong>10 minuten</strong> en richt zich op de
+                        factoren die beslissingen rondom kunststof
+                        verpakkingen beïnvloeden.
+                    </p>
+
+                    <p>
+                        Onderwerpen zijn onder andere:
+                    </p>
+
+                    <ul>
+                        <li>Prijs versus duurzaamheid</li>
+                        <li>Virgin versus gerecycled materiaal</li>
+                        <li>Recycled content</li>
+                        <li>Circulariteit</li>
+                        <li>Leveranciersselectie</li>
+                        <li>Traceerbaarheid en transparantie</li>
+                        <li>ESG-criteria</li>
+                        <li>Europese regelgeving</li>
+                        <li>Risico's en leveringszekerheid</li>
+                    </ul>
+
+                    <a
+                        class="button"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdh2CyTfQtD0cUWkXz21dsc4ARQqd5WdSoeGQ_ufKYv9Kn9Gw/viewform?usp=sharing&ouid=107501487899355200763"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Start de vragenlijst
+                    </a>
+
+                </div>
+
+
+                <!-- INTERVIEW -->
+
+                <div class="card">
+
+                    <h3>
+                        Verdiepend interview
+                    </h3>
+
+                    <p>
+                        Naast de vragenlijst voer ik verdiepende gesprekken
+                        met een selecte groep professionals uit de praktijk.
+                    </p>
+
+                    <p>
+                        Tijdens een interview van circa
+                        <strong>45 minuten</strong> gaan we dieper in op de
+                        werkelijke afwegingen achter inkoopbeslissingen.
+                    </p>
+
+                    <p>
+                        Niet alleen wat organisaties op papier nastreven,
+                        maar vooral:
+                    </p>
+
+                    <p>
+                        <strong>
+                            Wat gebeurt er wanneer prijs, duurzaamheid,
+                            beschikbaarheid en compliance met elkaar botsen?
+                        </strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WAAROM DEELNEMEN -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                Waarom deelnemen?
+            </h2>
+
+            <p>
+                Uw deelname draagt bij aan onafhankelijk onderzoek naar de
+                manier waarop ESG en duurzaamheid daadwerkelijk worden
+                geïntegreerd binnen professionele verpakkingsinkoop.
+            </p>
+
+
+            <div class="usp-grid">
+
+                <div class="usp">
+
+                    <strong>
+                        Praktijkgericht
+                    </strong>
+
+                    Het onderzoek richt zich op werkelijke
+                    inkoopbeslissingen en niet alleen op
+                    duurzaamheidsambities.
+
+                </div>
+
+
+                <div class="usp">
+
+                    <strong>
+                        Onafhankelijk onderzoek
+                    </strong>
+
+                    Uw ervaring draagt bij aan wetenschappelijk inzicht
+                    in de ontwikkeling van duurzame verpakkingsinkoop.
+
+                </div>
+
+
+                <div class="usp">
+
+                    <strong>
+                        Resultaten ontvangen
+                    </strong>
+
+                    Na afronding kunnen deelnemers een samenvatting
+                    van de belangrijkste onderzoeksresultaten ontvangen.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OVER DE ONDERZOEKER -->
+
+    <section class="alt">
+
+        <div class="container">
+
+            <h2>
+                Over de onderzoeker
+            </h2>
+
+            <h3>
+                Gerard Peeters | DBA Candidate
+            </h3>
+
+            <p>
+                Mijn onderzoek richt zich op de integratie van ESG-principes
+                binnen strategische verpakkingsinkoop en specifiek op de
+                afweging tussen kosten, duurzaamheid, supply-chainrisico's
+                en Europese regelgeving.
+            </p>
+
+            <p>
+                Naast mijn DBA-onderzoek ben ik al vele jaren actief binnen
+                procurement en de verpakkingsindustrie. Hierdoor combineert
+                het onderzoek een wetenschappelijke benadering met de
+                dagelijkse praktijk van verpakkingsinkoop.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Draag bij aan het onderzoek
+            </h2>
+
+            <p>
+                Bent u betrokken bij de inkoop of besluitvorming rondom
+                verpakkingen? Dan nodig ik u graag uit om uw ervaring te
+                delen.
+            </p>
+
+            <p>
+                <strong>
+                    10 minuten van uw tijd kan waardevolle inzichten
+                    opleveren voor de toekomst van duurzame
+                    verpakkingsinkoop.
+                </strong>
+            </p>
+
+            <a
+                class="button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdh2CyTfQtD0cUWkXz21dsc4ARQqd5WdSoeGQ_ufKYv9Kn9Gw/viewform?usp=sharing&ouid=107501487899355200763"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Doe mee aan het onderzoek
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- VERTROUWELIJKHEID -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                Vertrouwelijkheid
+            </h2>
+
+            <p>
+                Alle onderzoeksgegevens worden vertrouwelijk behandeld
+                en geanonimiseerd verwerkt. Individuele respondenten en
+                organisaties zijn niet herkenbaar in de uiteindelijke
+                onderzoeksresultaten.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                DBA Research | Gerard Peeters
+            </p>
+
+            <p>
+                Onderzoek naar ESG en duurzame verpakkingsinkoop in Nederland
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
