@@ -33,29 +33,51 @@
         .hero {
             background: linear-gradient(135deg, #f4f7f5 0%, #e8f0eb 100%);
             padding: 90px 0;
-            text-align: center;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: left;
         }
 
         .hero h1 {
-            font-size: 46px;
+            font-size: 44px;
             line-height: 1.15;
             margin-bottom: 24px;
             color: #173d2c;
         }
 
         .hero h2 {
-            font-size: 25px;
+            font-size: 23px;
             line-height: 1.4;
             font-weight: 400;
-            max-width: 850px;
-            margin: 0 auto 28px auto;
+            margin-bottom: 28px;
             color: #444444;
         }
 
         .hero p {
-            max-width: 760px;
-            margin: 0 auto 35px auto;
             font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .hero-photo {
+            flex-shrink: 0;
+        }
+
+        .hero-photo img {
+            width: 320px;
+            height: 420px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 12px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+            display: block;
         }
 
         /* BUTTON */
@@ -203,6 +225,22 @@
                 padding: 60px 0;
             }
 
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+
+            .hero-photo {
+                order: -1;
+                text-align: center;
+            }
+
+            .hero-photo img {
+                width: 220px;
+                height: 280px;
+                margin: 0 auto;
+            }
+
             .hero h1 {
                 font-size: 35px;
             }
@@ -246,32 +284,43 @@
 
     <header class="hero">
         <div class="container">
+            <div class="hero-inner">
 
-            <h1>
-                Draag bij aan onderzoek naar duurzame verpakkingsinkoop
-            </h1>
+                <div class="hero-text">
+                    <h1>
+                        Draag bij aan onderzoek naar duurzame verpakkingsinkoop
+                    </h1>
 
-            <h2>
-                Hoe integreren Nederlandse organisaties ESG en duurzaamheid
-                in hun beslissingen rondom kunststof verpakkingen?
-            </h2>
+                    <h2>
+                        Hoe integreren Nederlandse organisaties ESG en duurzaamheid
+                        in hun beslissingen rondom kunststof verpakkingen?
+                    </h2>
 
-            <p>
-                Prijs, kwaliteit en leveringszekerheid zijn al jaren bepalende
-                factoren binnen inkoop. Maar welke rol spelen duurzaamheid,
-                circulariteit en Europese regelgeving wanneer de uiteindelijke
-                inkoopbeslissing wordt genomen?
-            </p>
+                    <p>
+                        Prijs, kwaliteit en leveringszekerheid zijn al jaren bepalende
+                        factoren binnen inkoop. Maar welke rol spelen duurzaamheid,
+                        circulariteit en Europese regelgeving wanneer de uiteindelijke
+                        inkoopbeslissing wordt genomen?
+                    </p>
 
-            <a
-                class="button"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdh2CyTfQtD0cUWkXz21dsc4ARQqd5WdSoeGQ_ufKYv9Kn9Gw/viewform?usp=sharing&ouid=107501487899355200763"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Start de vragenlijst
-            </a>
+                    <a
+                        class="button"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdh2CyTfQtD0cUWkXz21dsc4ARQqd5WdSoeGQ_ufKYv9Kn9Gw/viewform?usp=sharing&ouid=107501487899355200763"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Start de vragenlijst
+                    </a>
+                </div>
 
+                <div class="hero-photo">
+                    <img
+                        src="gerard-peeters.png"
+                        alt="Gerard Peeters – DBA Candidate"
+                    />
+                </div>
+
+            </div>
         </div>
     </header>
 
